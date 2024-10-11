@@ -231,6 +231,27 @@ padding: var(--space-mid);
   .masaze-cont{
     grid-template-columns: 1fr;
   }
+  .about::before{
+    width: 300px;
+    height: 300px;
+    background: #f19066;
+    top: 20%;
+    left: 0;
+  }
+  .about::after{
+    width: 400px;
+    height: 400px;
+    background: #f19066;
+    bottom: -100%;
+    right: 100%;
+  }
+  .about-card{
+    flex-direction: column-reverse;
+  }
+  .about-card-right{
+    min-height: 60vh;
+    background-position: end center;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
