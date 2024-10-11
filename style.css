@@ -15,6 +15,7 @@
     box-sizing: border-box;
     transition: .3s;
     font-family: sans-serif;
+    scroll-behavior: smooth;
   }
   /*
     Typographic tweaks!
@@ -51,7 +52,9 @@
     isolation: isolate;
   }
   :root{
-    --main: #33d9b2;
+    --main: #e15f41;
+    --main: #e15f41;
+    --main-02: hsla(11, 73%, 57%, .2);
     --header: #2e2e2e;
     --text: #4e4e4e;
     --label: #6e6e6e;
@@ -76,6 +79,105 @@
    }
 p{
   font-size: 16px;
+}
+.link{
+  text-decoration: none;
+  color: var(--bg-light);
+  font-size: var(--font-big);
+  font-size: 18px;
+}
+.btn{
+  border: none;
+  outline-color: transparent;
+  width: max-content;
+  background: var(--text);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+}
+.btn-color{
+  background: #e15f41;
+}
+.header{
+  min-height: 100vh;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section{
+  min-height: 100vh;
+  padding: var(--space-mid) 10vw;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-mid) 5vw;
+  background: hsla(0, 0%, 0%, 0.5);
+  backdrop-filter: blur(5px);
+  color: var(--bg-light) !important;
+}
+.nav-center{
+  display: flex;
+  gap: var(--space-mid);
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  padding: var(--space-mid) 10vw;
+}
+.heading{
+  font-size: 60px;
+  color: var(--header);
+}
+.sub-header{
+  color: var(--header);
+}
+.hero-btn-cont{
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 12px;
+}
+.about{
+  background: var(--main-02);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.about::before{
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: #9f0707;
+  top: 0;
+  left: 0;
+}
+.about-card{
+  background: hsla(0, 0%, 0%, 0.3);
+  backdrop-filter: blur(5px);
+  width: 80%;
+  height: 90%;
+  border-radius: 24px;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.about-card-left{
+  padding: var(--space-mid);
+  flex: 1;
+}
+.about-card-right{
+  flex: 1;
+  background-image: url(images/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (width < 1200px) {}
