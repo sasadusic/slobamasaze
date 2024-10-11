@@ -221,6 +221,9 @@ padding: var(--space-mid);
 
 /* Large devices (desktops, 992px and up) */
 @media (width < 992px) {
+  .link{
+    font-size: 16px;
+  }
   .masaze-cont{
     grid-template-columns: repeat(2, 1fr);
   }
