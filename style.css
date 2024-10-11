@@ -220,10 +220,18 @@ padding: var(--space-mid);
 @media (width < 1200px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (width < 992px) {}
+@media (width < 992px) {
+  .masaze-cont{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (width < 768px) {}
+@media (width < 768px) {
+  .masaze-cont{
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (width < 576px) {}
