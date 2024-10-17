@@ -244,16 +244,48 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background: #f19066;
   top: 0;
   left: 0;
+  filter: blur(150px);
+  animation: about-before 20s infinite ease-in-out;
+}
+@keyframes about-before {
+  0%{
+    top: 0;
+    left: 0;
+  }
+  50%{
+    top: 10%;
+    left: 60%;
+  }
+  100%{
+    top: 0;
+    left: 0;
+  }
 }
 .about::after{
   content: '';
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
-  background: #f19066;
+  background: #cf6a87;
   bottom: -10%;
   right: 33%;
+  filter: blur(200px);
+  animation: about-after 20s infinite ease-in-out;
+}
+@keyframes about-after {
+  0%{
+    bottom: -10%;
+    right: 33%;
+  }
+  50%{
+    bottom: -10%;
+    right: 73%;
+  }
+  100%{
+    bottom: 10%;
+    right: 33%;
+  }
 }
 .about-card{
   background: hsla(0, 0%, 0%, 0.4);
