@@ -121,10 +121,10 @@ p{
 .h-bubble-1{
   position: absolute;
   top: 0;
-  right: -20%;
+  right: -40%;
   transform: translate(-50%, -50%);
-  width: 110vw;
-  height: 110vw;
+  width: 150vw;
+  height: 150vw;
   border-radius: 50%;
   background: var(--main-8);
   animation: bubble1 10s infinite;
