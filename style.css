@@ -53,6 +53,7 @@
   }
   :root{
     --main-2: #8b9db6;
+    --main-2: hsla(215, 23%, 63%, .4);
     --main-7: #b68b9d;
     --main-3: #0f161a;
     --main-4: #0f161a;
@@ -109,11 +110,93 @@ p{
 }
 .header{
   min-height: 100vh;
-  background-image: url(images/bg2.jpeg);
+  /* background-image: url(images/bg2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
+  position: relative;
   /* filter: brightness(.2); */
+  overflow: hidden;
+}
+.h-bubble-1{
+  position: absolute;
+  top: 0;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  width: 1250px;
+  height: 1250px;
+  border-radius: 50%;
+  background: var(--main-8);
+  animation: bubble1 10s infinite;
+  filter: blur(60px);
+}
+@keyframes bubble1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+.h-bubble-2{
+  position: absolute;
+  top: -5%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 1450px;
+  height: 1450px;
+  border-radius: 50%;
+  background: #8615b7;
+  animation: bubble2 10s infinite;
+  filter: blur(100px);
+}
+@keyframes bubble2 {
+  0% {
+    /* top: -5%; */
+    opacity: 1;
+  }
+  50% {
+    top: 30%;
+    opacity: 0.8;
+  }
+  100% {
+    /* top: -5%; */
+    opacity: 1;
+  }
+  
+}
+.h-bubble-3{
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1050px;
+  height: 1050px;
+  border-radius: 50%;
+  background: #b7155b;
+  animation: bubble3 10s infinite;
+  filter: blur(100px);
+}
+@keyframes bubble3 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    left: 30%;
+    opacity: 0.8;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+  
 }
 .section{
   min-height: 100vh;
@@ -285,6 +368,34 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   100%{
     bottom: 10%;
     right: 33%;
+  }
+}
+.bubble-1{
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: #6a89cc;
+  /* z-index: 100; */
+  right: -10%;
+  bottom: -20%;
+  filter: blur(200px);
+  animation: bubble-1 10s infinite ease-in-out;
+}
+@keyframes bubble-1 {
+  0%{
+    bottom: -20%;
+    right: -10%;
+    /* right: -10%; */
+  }
+  50%{
+    bottom: 80%;
+    right: -10%;
+  }
+  100%{
+    bottom: -20%;
+    right: -10%;
+    /* right: -10%; */
   }
 }
 .about-card{
