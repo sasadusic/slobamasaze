@@ -123,8 +123,8 @@ p{
   top: 0;
   right: -20%;
   transform: translate(-50%, -50%);
-  width: 1250px;
-  height: 1250px;
+  width: 110vw;
+  height: 110vw;
   border-radius: 50%;
   background: var(--main-8);
   animation: bubble1 10s infinite;
@@ -150,8 +150,8 @@ p{
   top: -5%;
   left: 0;
   transform: translate(-50%, -50%);
-  width: 1450px;
-  height: 1450px;
+  width: 100vw;
+  height: 100vw;
   border-radius: 50%;
   background: #8615b7;
   animation: bubble2 10s infinite;
@@ -177,12 +177,12 @@ p{
   top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1050px;
-  height: 1050px;
+  width: 70vw;
+  height: 70vw;
   border-radius: 50%;
   background: #b7155b;
   animation: bubble3 10s infinite;
-  filter: blur(100px);
+  filter: blur(150px);
 }
 @keyframes bubble3 {
   0% {
