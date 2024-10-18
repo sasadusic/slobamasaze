@@ -125,7 +125,7 @@ p{
   transform: translate(-50%, -50%);
   width: 150vw;
   height: 150vw;
-  border-radius: 50%;
+  border-radius: 0 0 50% 50%;
   background: var(--main-8);
   animation: bubble1 10s infinite;
   filter: blur(60px);
